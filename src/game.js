@@ -178,7 +178,7 @@ let config = {
       scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
       thiis.physics.add.collider(player, platforms);
       thiis.physics.add.collider(stars, platforms);
-      thiis.physics.add.collider(bombs, platforms)
+      thiis.physics.add.collider(bombs, platforms);
       
       thiis.physics.add.overlap(player, stars, collectStar, null, thiis);
       thiis.physics.add.collider(player, bombs, hitBomb, null, thiis);
